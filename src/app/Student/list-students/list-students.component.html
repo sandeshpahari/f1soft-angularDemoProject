@@ -1,0 +1,9 @@
+<div class="panel panel-primary" *ngFor="let student of students">
+    <div (click)="onClick(student.id)" class="pointerCursor">
+        <app-display-student [student]="student"></app-display-student>
+    </div>
+</div>
+<!-- <button (click)="nextStudent()" class="btn btn-primary vertical-align">
+    Next Student
+</button><br><br>
+<app-display-student [student]="studentToDisplay"></app-display-student> -->
