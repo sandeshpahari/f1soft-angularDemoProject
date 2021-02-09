@@ -14,6 +14,7 @@ import { DisplayStudentComponent } from './Student/display-student/display-stude
 // import { CreateStudentCanDeactivateGuardService } from './Shared/create-student-can-deacvtivate-guard.service';
 import { StudentDetailsComponent } from './Student/student-details/student-details.component';
 import { ReactiveFormComponent } from './Student/reactive-form/reactive-form.component';
+import { CheckoutComponent } from './Student/checkout/checkout.component';
 
 
 const appRoutes: Routes = [
@@ -34,6 +35,10 @@ const appRoutes: Routes = [
     component: ReactiveFormComponent
   },
   {
+    path: 'checkout',
+    component: CheckoutComponent
+  },
+  {
     path: '',
     redirectTo: '/list', pathMatch: 'full'
   },
@@ -48,6 +53,7 @@ const appRoutes: Routes = [
     DisplayStudentComponent,
     StudentDetailsComponent,
     ReactiveFormComponent,
+    CheckoutComponent,
   ],
   imports: [
     BrowserModule,

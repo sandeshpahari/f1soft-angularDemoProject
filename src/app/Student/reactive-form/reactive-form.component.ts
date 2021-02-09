@@ -45,18 +45,18 @@ export class ReactiveFormComponent implements OnInit {
   ngOnInit(): void {
     // FormBuilder Example....................
 
-    // this.studentReactiveForm = this.formBuilder.group({
-    //   name: ['', Validators.required],
-    //   major: ['', Validators.required],
-    //   grade: ['', Validators.required]
-    // });
+    this.studentReactiveForm = this.formBuilder.group({
+      name: ['', Validators.required],
+      major: ['', Validators.required],
+      grade: ['', Validators.required]
+    });
 
     //............................ FormControl example.............................
-    this.studentReactiveForm = new FormGroup({
-      name: new FormControl(),
-      major: new FormControl(),
-      grade: new FormControl()
-    });
+    // this.studentReactiveForm = new FormGroup({
+    //   name: new FormControl(),
+    //   major: new FormControl(),
+    //   grade: new FormControl()
+    // });
 
 
 
